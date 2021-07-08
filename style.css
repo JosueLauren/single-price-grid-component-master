@@ -16,8 +16,8 @@
 
 body {
     background-color: var(--Light-Gray);
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -130,4 +130,31 @@ section.tutorials p {
 }
     .attribution a {
     color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 800px) {
+
+    main.principal {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 70%;
+        height: auto;
+        grid-template-columns: 100%;
+        grid-template-rows: 250px 220px 220px;
+    }
+
+    section.comunidade p.texto-comunidade {
+        line-height: 1.8;
+    }
+
+    section.subscrição{
+        grid-column: 1 /3;
+        border-bottom-left-radius: 0px;
+    }
+
+    section.tutorials{
+        grid-column: 1 /3;
+        border-bottom-left-radius: 5px;
+    
+    }
 }
