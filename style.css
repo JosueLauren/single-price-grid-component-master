@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+body {
+    background-color: var(--Light-Gray);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main.principal {
+    width: 45%;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 180px 220px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+section.comunidade {
+    grid-column: 1 / 3;
+    padding: 30px;
+    line-height: 1.3;
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+h1.titulo-comunidade {
+    margin-bottom: 15px;
+    color: var(--Cyan);
+}
+
+p.sub-comunidade {
+    margin-bottom: 10px;
+    color: var(--Bright-Yellow);
+}
+
+p.texto-comunidade {
+    color: var(--Grayish-Blue);
+    font-size: 14px;
+}
+
+section.subscrição {
+    width: 100%;
+    line-height: 1.5;
+    padding: 30px;
+    background-color: var(--Cyan);
+    border-bottom-left-radius: 5px;
+}
+
+p.titulo-subscrição {
+    margin-bottom: 15px;
+    color: white;
+}
+
+span.valor {
+    font-size: 25px;
+    color: white;
+    margin-right: 10px;
+    
+}
+
+p.valor-subscrição {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+}
+
+p.valor-dia {
+    color: white;
+    font-size: 13px;
+}
+
+section.subscrição div {
+    width: 100%;
+    text-align: center;
+}
+
+a.btn-subscrição {
+    display: inline-block;
+    text-decoration: none;
+    width: 90%;
+    padding: 10px 30px;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 5px;
+    background-color: var(--Bright-Yellow);
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+section.tutorials {
+    padding: 30px;
+    background-color: hsla(179, 62%, 43%, 0.8);
+    border-bottom-right-radius: 5px;
+}
+
+p.titulo-tutorials {
+    margin-bottom: 10px;
+    color: white !important;
+    font-size: 18px !important;
+}
+
+section.tutorials p {
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.6;
+    font-size: 12px;
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+}
+    .attribution a {
+    color: hsl(228, 45%, 44%); 
+}
